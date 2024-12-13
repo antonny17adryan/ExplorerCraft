@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Monocraft';
+    src: url('Monocraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+    font-family: 'Monocraft', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5A422A;
+    color: #ffffff;
+    cursor: url('espada.png'), auto;
+}
+
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #2c2014; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.container h2, .container h3, .container p {
+    text-align: justify; 
+    margin-bottom: 20px; 
+}
+
+.container a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.container a:hover {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+header {
+    background-color: #417a43;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #00FF00;
+}
+
+footer {
+    background-color: #417a43;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.back-button {
+    background-color: #ff6f00; /* Cor de fundo laranja */
+    color: #ffffff; /* Texto branco */
+    font-family: 'Monocraft', sans-serif; /* Fonte personalizada */
+    padding: 10px 20px; /* Espessura e largura do botão */
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+.back-button:hover {
+    background-color: #ff6f00d0; /* Cor de fundo alterada no hover */
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+.back-button:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px #ff6f00d0; /* Sombras suaves ao focar */
+}
+
+/* Corrigindo o erro, aqui o link dentro de .back-button */
+.back-button a {
+    color: #fff; /* Definindo a cor do link como branco */
+    text-decoration: none; /* Removendo a sublinha no link */
+}
+
+.back-button a:hover {
+    text-decoration: underline; /* Adicionando a sublinha ao passar o mouse */
+}

@@ -30,9 +30,9 @@ h1 {
 
 header {
     background-color: #417a43;
-    color: #ffffff;
-    padding: 20px 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
 }
 
 header nav a {
@@ -127,6 +127,44 @@ form input:focus, form textarea:focus, form select:focus {
     box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
 }
 
+/* Quadrado de dados enviados com animação */
+.result-container {
+    background-color: #2c2014;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeIn 0.8s forwards;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.result-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.result-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
 #feedback {
     text-align: center;
     font-size: 18px;
@@ -218,4 +256,27 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
+}
+
+/* Estilos para o botão "Mostrar senha" */
+button#show-password {
+    background-color: #ff6f00 ; /* Cor de fundo verde, combinando com o estilo */
+    color: #ffffff; /* Texto branco */
+    font-family: 'Monocraft', sans-serif; /* Fonte personalizada */
+    padding: 10px 20px; /* Espessura e largura do botão */
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+button#show-password:hover {
+    background-color: #ff6f00d0 ; /* Cor de fundo alterada no hover */
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+button#show-password:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px #ff6f00d0 ; /* Sombras suaves ao focar */
 }

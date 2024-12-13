@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página dos Desenvolvedores</title>
   <link rel="stylesheet" href="desenvolvedor.css">
+  <link rel="stylesheet" href="anima.css">
 </head> 
-
 <body>
   <header>
     <h1>Desenvolvedores</h1>
@@ -23,24 +23,24 @@
 
   <main>
     <div class="card" id="perfil1">
-      <img src="Julia.jpg" alt="Foto do Desenvolvedor 1">
+      <img id="foto1" src="Julia.jpg" alt="Foto do Desenvolvedor 1" onclick="trocarFoto('foto1', 'skeleton.png','Julia.jpg')">
       <h2>Ana Júlia</h2>
       <p>Estudante do IFRN do Curso de Informática no campus de Santa Cruz, 16 anos e reside em Tangará RN.</p>
-      <button onclick="location.href='https:github.com/ajuliafeliciano'">Acessar Perfil</button>
+      <button onclick="location.href='https://github.com/ajuliafeliciano'">Acessar Perfil</button>
     </div>
 
     <div class="card" id="perfil2">
-      <img src="Antonny.jpg" alt="Foto do Desenvolvedor 2">
+      <img id="foto2" src="Antonny.jpg" alt="Foto do Desenvolvedor 2" onclick="trocarFoto('foto2', 'creeper.jpg','Antonny.jpg')">
       <h2>Antonny Adryan</h2>
       <p>Estudante do IFRN do Curso de Informática no campus de Santa Cruz, 16 anos e reside em Tangará RN.</p>
-      <button onclick="location.href='https:github.com/antonny17adryan'">Acessar Perfil</button>
+      <button onclick="location.href='https://github.com/antonny17adryan'">Acessar Perfil</button>
     </div>
 
     <div class="card" id="perfil3">
-      <img src="Isabelly.jpg" alt="Foto do Desenvolvedor 3">
+      <img id="foto3" src="Isabelly.jpg" alt="Foto do Desenvolvedor 3" onclick="trocarFoto('foto3', 'zombie.jpg','Isabelly.jpg')">
       <h2>Maria Isabelly</h2>
       <p>Estudante do IFRN do Curso de Informática no campus de Santa Cruz, 15 anos e reside em Tangará RN.</p>
-      <button onclick="location.href='https:github.com/m-isabelly'">Acessar Perfil</button>
+      <button onclick="location.href='https://github.com/m-isabelly'">Acessar Perfil</button>
     </div>
   </main>
 
@@ -50,5 +50,6 @@
     <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
     <p>Grupo: Ana Júlia Feliciano da Silva, Antonny Adryan de Andrade, Maria Isabelly Silva dos Santos</p>
   </footer>
+  <script src="desenvolvedor.js"></script>
 </body>
 </html>
