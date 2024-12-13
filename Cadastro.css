@@ -260,23 +260,23 @@ input[type="checkbox"]:focus {
 
 /* Estilos para o botão "Mostrar senha" */
 button#show-password {
-    background-color: #ff6f00 ; /* Cor de fundo verde, combinando com o estilo */
+    background-color: #ff6f00 ;
     color: #ffffff; /* Texto branco */
     font-family: 'Monocraft', sans-serif; /* Fonte personalizada */
-    padding: 10px 20px; /* Espessura e largura do botão */
+    padding: 10px 20px; 
     border: none;
-    border-radius: 5px; /* Borda arredondada */
+    border-radius: 5px; 
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 1rem;
 }
 
 button#show-password:hover {
-    background-color: #ff6f00d0 ; /* Cor de fundo alterada no hover */
-    transform: scale(1.05); /* Efeito de aumento no hover */
+    background-color: #ff6f00d0 ;
+    transform: scale(1.05);
 }
 
 button#show-password:focus {
-    outline: none; /* Remove o contorno padrão */
-    box-shadow: 0 0 5px #ff6f00d0 ; /* Sombras suaves ao focar */
+    outline: none; 
+    box-shadow: 0 0 5px #ff6f00d0 ; 
 }
