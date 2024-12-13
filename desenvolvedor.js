@@ -11,6 +11,6 @@ function trocarFoto(id, imagemOriginal, novaImagem) {
   
     setTimeout(function() {
       imagem.classList.remove('rotate');
-    }, 600); // Tempo de animação de rotação (600ms)
+    }, 600); 
   }
   
