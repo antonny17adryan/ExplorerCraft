@@ -72,33 +72,31 @@ footer p {
 }
 
 .back-button {
-    background-color: #ff6f00; /* Cor de fundo laranja */
-    color: #ffffff; /* Texto branco */
-    font-family: 'Monocraft', sans-serif; /* Fonte personalizada */
-    padding: 10px 20px; /* Espessura e largura do botão */
+    background-color: #ff6f00; 
+    color: #ffffff; 
+    font-family: 'Monocraft', sans-serif; 
+    padding: 10px 20px; 
     border: none;
-    border-radius: 5px; /* Borda arredondada */
+    border-radius: 5px; 
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 1rem; 
 }
 
 .back-button:hover {
-    background-color: #ff6f00d0; /* Cor de fundo alterada no hover */
-    transform: scale(1.05); /* Efeito de aumento no hover */
+    background-color: #ff6f00d0; 
+    transform: scale(1.05); 
 }
 
 .back-button:focus {
-    outline: none; /* Remove o contorno padrão */
-    box-shadow: 0 0 5px #ff6f00d0; /* Sombras suaves ao focar */
-}
-
-/* Corrigindo o erro, aqui o link dentro de .back-button */
+    outline: none; 
+    box-shadow: 0 0 5px #ff6f00d0; 
+}
 .back-button a {
-    color: #fff; /* Definindo a cor do link como branco */
-    text-decoration: none; /* Removendo a sublinha no link */
+    color: #fff; 
+    text-decoration: none; 
 }
 
 .back-button a:hover {
-    text-decoration: underline; /* Adicionando a sublinha ao passar o mouse */
+    text-decoration: underline;
 }
