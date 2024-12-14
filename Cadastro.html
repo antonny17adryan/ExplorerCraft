@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="Cadastro.css">
+
 </head>
 
 <body>
@@ -16,8 +17,10 @@
             <a href="Cadastro.html">Cadastro</a>
             <a href="desenvolvedor.html" aria-label="Página dos desenvolvedores">Desenvolvedores</a>
             <a href="recebe.php" aria-label="Página de envio de dados">Envios</a>
+            <a href="avisos.html">Avisos</a>  
             <a href="termo.html">Termos e Condições</a>
             <a href="priv.html">Política de Privacidade</a>
+            <a href="quiz.html">Quiz</a>
         </nav>
     </header>
 
@@ -26,7 +29,6 @@
             <fieldset>
                 <legend id="form-title">Preencha seus dados</legend>
 
-                <!-- Informações Pessoais -->
                 <label for="nome">Nome completo:</label>
                 <input type="text" id="nome" name="nome" required maxlength="100" placeholder="Seu nome">
 
@@ -36,13 +38,12 @@
                 <label for="senha">Senha:</label>
                 <div class="senha-container">
                     <input type="password" id="senha" name="senha" required placeholder="Escolha uma senha">
-                    <button type="button" id="show-password">Mostrar Senha</button>
+                    <button type="button" id="show-password" onclick="togglePassword()">Mostrar Senha</button>
                 </div>
 
                 <label for="nascimento">Data de nascimento:</label>
                 <input type="date" id="nascimento" name="nascimento" required>
 
-                <!-- Informações de Contato -->
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
 
@@ -55,7 +56,6 @@
                 <label for="site">Site ou rede social:</label>
                 <input type="url" id="site" name="site" placeholder="https://seusite.com">
 
-                <!-- Preferências -->
                 <label for="genero">Gênero:</label>
                 <select id="genero" name="genero" required>
                     <option value="" disabled selected>Selecione seu gênero</option>
@@ -64,17 +64,16 @@
                     <option value="outro">Outro</option>
                 </select>
 
-                <label for="hora-disponivel">Horário disponível:</label>
-                <input type="time" id="hora-disponivel" name="hora_disponivel">
+                <label for="hora_disponivel">Horário disponível:</label>
+                <input type="time" id="hora_disponivel" name="hora_disponivel">
 
                 <label for="comentarios">Comentários:</label>
                 <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe seus comentários"></textarea>
 
-                <!-- Aceite dos Termos e Submissão -->
                 <label>
                     Eu li e aceito os <a href="termo.html" target="_blank">termos de privacidade e condições de uso</a>.
                 </label>
-                <input type="checkbox" id="termo" name="termo">
+                <input type="checkbox" id="termo" name="termo" required>
 
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpar</button>
@@ -90,8 +89,6 @@
         <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
         <p>Grupo: Ana Júlia Feliciano da Silva, Antonny Adryan de Andrade</p>
     </footer>
-
-    <script src="Cadastro.js"></script>
 </body>
 
 </html>

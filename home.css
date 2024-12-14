@@ -11,11 +11,10 @@ body {
     padding: 0;
     background-color: #5A422A;
     color: #fff;
-    cursor: url('espada.png'), auto;
 }
 
-button, a, input, textarea, select, form {
-    cursor: url('espada.png'), auto;
+* {
+    cursor: url('espada.png'), auto !important;
 }
 
 h1 {
@@ -55,6 +54,8 @@ header nav a:hover {
     background-color: #5A422A;
     padding: 40px 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
 .curiosidade {
@@ -75,15 +76,22 @@ header nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#fanbase {
+#fanbase, #quiz {
     background-color: #2c2014;
     padding: 30px 20px;
     margin-top: 30px;
     border-radius: 10px;
     color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 0.6s forwards;
 }
 
-#cadastroButton {
+#quiz {
+    animation-delay: 0.3s;
+}
+
+#cadastroButton, #quizButton {
     font-family: 'Monocraft', sans-serif;
     font-size: 16px;
     background-color: #ffbb00d2;
@@ -93,11 +101,19 @@ header nav a:hover {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
 }
 
-#cadastroButton:hover {
+#cadastroButton:hover, #quizButton:hover {
     background-color: #555;
     color: #ffffff;
+    transform: scale(1.1);
+}
+
+#cadastroButton:focus, #quizButton:focus {
+    outline: none;
+    box-shadow: 0 0 10px #72AE4A;
 }
 
 button {
@@ -109,11 +125,14 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
 }
 
 button:hover {
     background-color: #e76f51;
     color: #ffffff;
+    transform: scale(1.1);
 }
 
 form {
@@ -181,6 +200,26 @@ footer {
     line-height: 1.5;
 }
 
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -190,7 +229,7 @@ footer {
         padding: 15px;
     }
 
-    #cadastroButton, button {
+    #cadastroButton, #quizButton, button {
         padding: 8px 15px;
     }
 
@@ -198,7 +237,7 @@ footer {
         padding: 15px;
     }
 
-    #curiosidades, #fanbase {
+    #curiosidades, #fanbase, #quiz {
         padding: 20px 10px;
     }
 }

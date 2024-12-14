@@ -1,13 +1,18 @@
 .rotate {
-    animation: rotacao 0.6s ease-in-out;
+  animation: flip 0.6s ease-in-out;
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
   }
-  
-  @keyframes rotacao {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  50% {
+    transform: perspective(1000px) rotateY(90deg);
   }
-  
+  100% {
+    transform: perspective(1000px) rotateY(180deg);
+  }
+}
+* {
+  cursor: url('espada.png'), auto !important;
+}

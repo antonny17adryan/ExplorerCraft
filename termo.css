@@ -11,7 +11,6 @@ body {
     padding: 0;
     background-color: #5A422A;
     color: #ffffff;
-    cursor: url('espada.png'), auto;
 }
 
 .container {
@@ -72,31 +71,35 @@ footer p {
 }
 
 .back-button {
-    background-color: #ff6f00; 
-    color: #ffffff; 
-    font-family: 'Monocraft', sans-serif; 
-    padding: 10px 20px; 
+    background-color: #ff6f00;
+    color: #ffffff;
+    font-family: 'Monocraft', sans-serif;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px; 
-    cursor: pointer;
+    border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 .back-button:hover {
-    background-color: #ff6f00d0; 
-    transform: scale(1.05); 
+    background-color: #ff6f00d0;
+    transform: scale(1.05);
 }
 
 .back-button:focus {
-    outline: none; 
-    box-shadow: 0 0 5px #ff6f00d0; 
-}
+    outline: none;
+    box-shadow: 0 0 5px #ff6f00d0;
+}
+
 .back-button a {
-    color: #fff; 
-    text-decoration: none; 
+    color: #fff;
+    text-decoration: none;
 }
 
 .back-button a:hover {
     text-decoration: underline;
+}
+
+* {
+    cursor: url('espada.png'), auto !important;
 }

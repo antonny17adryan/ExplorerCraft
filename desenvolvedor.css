@@ -1,3 +1,4 @@
+    /* Revisado por IA e por Antonny */
 @font-face {
   font-family: 'Monocraft';
   src: url('Monocraft.ttf') format('truetype');
@@ -10,13 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #5A422A;
-  cursor: url('espada.png'), auto;
 }
-
-button, a, input, textarea, select, form {
-  cursor: url('espada.png'), auto;
-}
-
 header {
   background-color: #417a43;
   color: rgb(255, 255, 255);
@@ -27,7 +22,7 @@ header nav a {
   color: #fff;
   margin: 0 15px;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 header nav a:hover {
   color: #00FF00;
@@ -111,7 +106,6 @@ main {
   color: white;
   border: none;
   border-radius: 4px;
-  cursor: url('espada.png'), auto;
   font-family: 'Monocraft', sans-serif;
   transition: background-color 0.3s ease;
 }
@@ -137,4 +131,7 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
   line-height: 1.5;
+}
+* {
+  cursor: url('espada.png'), auto !important;
 }

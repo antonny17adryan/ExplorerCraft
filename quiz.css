@@ -4,25 +4,25 @@
     font-weight: normal;
     font-style: normal;
 }
+* {
+    cursor: url('espada.png'), auto !important;
+}
 
 body {
     font-family: 'Monocraft', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #5A422A;
-    color: #ffffff;
+    color: #fff;
 }
 
 a {
     color: #FF5733;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: #00FF00;
-}
-
-* {
-    cursor: url('espada.png'), auto !important;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
 
 header {
     background-color: #417a43;
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-align: center;
     padding: 1rem;
 }
@@ -57,7 +57,7 @@ form {
     max-width: 650px;
     width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 form:hover {
@@ -76,8 +76,7 @@ form label {
     font-size: 1.1rem;
     font-weight: bold;
 }
-
-form input, form textarea, form select, form button {
+form input, form select, form button {
     width: calc(100% - 20px);
     margin-bottom: 20px;
     padding: 12px;
@@ -89,26 +88,10 @@ form input, form textarea, form select, form button {
     font-family: 'Monocraft', sans-serif;
     box-sizing: border-box;
 }
-
-form select {
-    background-color: #f9f9f9;
-}
-
-form input[type="date"], form input[type="color"], form input[type="file"], form input[type="url"], form input[type="tel"], form textarea {
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    padding: 12px;
-    font-size: 1rem;
-    width: calc(100% - 24px);
-    box-sizing: border-box;
-    font-family: 'Monocraft', sans-serif;
-}
-
 form button {
     background-color: #72AE4A;
     color: #000;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -121,12 +104,14 @@ form button:focus {
     border-color: #417a43;
     outline: none;
     box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
+    cursor: url('espada.png'), auto;
 }
 
 form input:focus, form textarea:focus, form select:focus {
     border-color: #417a43;
     outline: none;
     box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
+    cursor: url('espada.png'), auto;
 }
 
 .result-container {
@@ -140,6 +125,7 @@ form input:focus, form textarea:focus, form select:focus {
     opacity: 0;
     transform: scale(0.95);
     animation: fadeIn 0.8s forwards;
+    cursor: url('espada.png'), auto;
 }
 
 @keyframes fadeIn {
@@ -183,7 +169,7 @@ form input:focus, form textarea:focus, form select:focus {
 
 footer {
     background-color: #417a43;
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -247,35 +233,39 @@ input[type="checkbox"] {
     width: 20px;
     height: 20px;
     transition: all 0.3s ease;
+    cursor: url('espada.png'), auto;
 }
 
 input[type="checkbox"]:checked {
     background-color: darkgreen;
+    cursor: url('espada.png'), auto;
+    cursor: url('espada.png'), auto;
 }
 
 input[type="checkbox"]:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
+    cursor: url('espada.png'), auto;
 }
 
 button#show-password {
-    background-color: #ff6f00; 
-    color: #ffffff;
-    font-family: 'Monocraft', sans-serif; 
-    padding: 10px 20px; 
+    background-color: #ff6f00;
+    color: #fff;
+    font-family: 'Monocraft', sans-serif;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 1rem;
 }
 
 button#show-password:hover {
-    background-color: #ff6f00d0; 
+    background-color: #ff6f00d0;
     transform: scale(1.05);
 }
 
 button#show-password:focus {
-    outline: none; 
-    box-shadow: 0 0 5px #ff6f00d0; 
+    outline: none;
+    box-shadow: 0 0 5px #ff6f00d0;
 }
