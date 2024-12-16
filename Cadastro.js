@@ -1,26 +1,39 @@
-/* jshint esversion: 6 */
-
+    /* Revisado por IA e por Antonny */
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("registration-form");
     const feedback = document.getElementById("feedback");
     const togglePasswordBtn = document.getElementById("show-password");
-    const passwordInput = document.getElementById("senha");
+    const passwordInput = document.getElementById("senha"); 
 
     togglePasswordBtn.addEventListener("click", () => {
-        const isPasswordHidden = passwordInput.type === "password";
-        passwordInput.type = isPasswordHidden ? "text" : "password";
-        togglePasswordBtn.textContent = isPasswordHidden ? "Ocultar" : "Mostrar";
+        togglePasswordBtn.style.fontFamily = "'Monocraft', sans-serif"; 
+        togglePasswordBtn.style.fontSize = '16px';
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text"
+            togglePasswordBtn.textContent = "Ocultar";
+        } else {
+            passwordInput.type = "password";
+            togglePasswordBtn.textContent = "Mostrar"; 
+        }
     });
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        feedback.textContent = "Formulário enviado com sucesso!";
-        feedback.classList.add("show");
-
+        e.preventDefault(); 
+        feedback.classList.add("show"); 
         setTimeout(() => {
             feedback.classList.remove("show");
-            feedback.textContent = "";
         }, 3000);
     });
 });
+function togglePassword() {
+    var passwordField = document.getElementById('senha');
+    var passwordToggle = document.getElementById('show-password');
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        passwordToggle.innerText = "Ocultar Senha";
+    } else {
+        passwordField.type = "password";
+        passwordToggle.innerText = "Mostrar Senha";
+    }
+}
