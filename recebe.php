@@ -4,21 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envios</title>
+    <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="Cadastro.css">
-    <script>
-        function togglePassword() {
-            var passwordField = document.getElementById('senha_d');
-            var passwordToggle = document.getElementById('show-password');
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-                passwordToggle.innerText = "Ocultar Senha";
-            } else {
-                passwordField.type = "password";
-                passwordToggle.innerText = "Mostrar Senha";
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -35,25 +22,11 @@
             <a href="quiz.html">Quiz</a>
         </nav>
     </header>
-
-    <form method="POST" action="">
-        <h2>Digite a senha para acessar os dados:</h2>
-        <label for="senha_d">Senha:</label>
-        <input type="password" id="senha_d" name="senha_d" required>
-        <button type="button" id="show-password" onclick="togglePassword()">Mostrar Senha</button>
-        <br><br>
-        <input type="submit" value="Acessar Dados">
-    </form>
-
     <form>
     <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha_informada = $_POST['senha_d'] ?? '';
 
-    $senha_dados = '1234'; 
-    if ($senha_informada === $senha_dados) {
-
-        echo "<script>hidePasswordField();</script>"; 
         $nome = $_POST['nome'] ?? '';
         $email = $_POST['email'] ?? '';
         $nascimento = $_POST['nascimento'] ?? '';
@@ -82,7 +55,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         echo "<p>Senha incorreta. Por favor, consulte o <a href='https://github.com/antonny17adryan/ExplorerCraft?tab=readme-ov-file#readme' target='_blank'>README</a> do site para mais informações.</p>";
     }
-}
 ?>
     </form>
 

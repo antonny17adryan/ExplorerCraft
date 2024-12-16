@@ -3,6 +3,8 @@
 
 ExplorerCraft é um projeto desenvolvido no âmbito do curso de Informática na disciplina de Autoria Web. O site consiste em um formulário interativo com tema inspirado no Minecraft, projetado para coletar informações de usuários.
 
+Atenção: Para acessar a página de envios, é necessário fornecer a senha correta. A senha para acessar os dados enviados é 1234.
+
 Para executar o código, siga os passos abaixo:
 
 Baixe todos os arquivos necessários.
