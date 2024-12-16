@@ -10,7 +10,10 @@
 
 <body>
     <header>
-        <h1>Formulário de Cadastro</h1>
+    <div class="header-title">
+        <h1>Envios</h1>
+        <img src="creeper.gif" alt="creeper" class="gif">
+        </div>
         <nav>
         <a href="index.html" aria-label="Página inicial">Home</a>
             <a href="Cadastro.html">Cadastro</a>
@@ -53,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "<p><strong>Comentários:</strong> $comentarios</p>";
         echo "</div>";
     } else {
-        echo "<p>Senha incorreta. Por favor, consulte o <a href='https://github.com/antonny17adryan/ExplorerCraft?tab=readme-ov-file#readme' target='_blank'>README</a> do site para mais informações.</p>";
+        echo "<p>O formulário não foi respondido pelo usuário.</p>";
     }
 ?>
     </form>

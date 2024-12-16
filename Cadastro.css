@@ -279,3 +279,21 @@ button#show-password:focus {
     outline: none; 
     box-shadow: 0 0 5px #ff6f00d0; 
 }
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.header-title h1 {
+    font-size: 2.5rem; 
+    color: #fff;
+    margin: 0;
+    font-family: 'Monocraft', sans-serif;
+}
+
+.header-title .gif {
+    height: 8em; 
+    width: auto; 
+}

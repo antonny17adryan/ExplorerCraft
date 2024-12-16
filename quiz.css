@@ -150,23 +150,6 @@ form input:focus, form textarea:focus, form select:focus {
     font-size: 1rem;
     margin-bottom: 10px;
 }
-
-#feedback {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 20px;
-    color: green;
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-#feedback.show {
-    display: block;
-    opacity: 1;
-    transform: scale(1);
-}
-
 footer {
     background-color: #417a43;
     color: #fff;
@@ -187,7 +170,6 @@ button[type="submit"], button[type="reset"] {
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 button[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -197,17 +179,6 @@ button[type="submit"]:hover {
     background-color: #45a049;
     transform: scale(1.05);
 }
-
-button[type="reset"] {
-    background-color: #f44336;
-    color: white;
-}
-
-button[type="reset"]:hover {
-    background-color: #e53935;
-    transform: scale(1.05);
-}
-
 button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(7, 87, 173, 0.5);
@@ -224,11 +195,6 @@ label, input[type="radio"] {
     vertical-align: middle;
     margin-right: 20px;
 }
-
-div.contato-opcoes {
-    margin-top: 10px;
-}
-
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
@@ -247,25 +213,21 @@ input[type="checkbox"]:focus {
     box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
     cursor: url('espada.png'), auto;
 }
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
 
-button#show-password {
-    background-color: #ff6f00;
+.header-title h1 {
+    font-size: 2.5rem; 
     color: #fff;
+    margin: 0;
     font-family: 'Monocraft', sans-serif;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 1rem;
 }
 
-button#show-password:hover {
-    background-color: #ff6f00d0;
-    transform: scale(1.05);
-}
-
-button#show-password:focus {
-    outline: none;
-    box-shadow: 0 0 5px #ff6f00d0;
+.header-title .gif {
+    height: 8em; 
+    width: auto; 
 }
