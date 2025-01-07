@@ -23,7 +23,10 @@
 
 <body>
     <header>
-        <h1>Envios</h1>
+    <div class="header-title">
+            <h1>Envios</h1>
+            <img src="creeper.gif" alt="creeper" class="gif">
+        </div>
         <nav>
         <a href="index.html" aria-label="Página inicial">Home</a>
             <a href="Cadastro.html">Cadastro</a>
