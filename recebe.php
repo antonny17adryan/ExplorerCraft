@@ -4,16 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envios</title>
     <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="Cadastro.css">
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById('senha_d');
+            var passwordToggle = document.getElementById('show-password');
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                passwordToggle.innerText = "Ocultar Senha";
+            } else {
+                passwordField.type = "password";
+                passwordToggle.innerText = "Mostrar Senha";
+            }
+        }
+    </script>
 </head>
 
 <body>
     <header>
-    <div class="header-title">
-        <h1>Envios</h1>
-        <img src="creeper.gif" alt="creeper" class="gif">
-        </div>
+        <h1>Formulário de Cadastro</h1>
         <nav>
         <a href="index.html" aria-label="Página inicial">Home</a>
             <a href="Cadastro.html">Cadastro</a>
@@ -27,9 +38,9 @@
     </header>
     <form>
     <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $senha_informada = $_POST['senha_d'] ?? '';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 
+        echo "<script>hidePasswordField();</script>"; 
         $nome = $_POST['nome'] ?? '';
         $email = $_POST['email'] ?? '';
         $nascimento = $_POST['nascimento'] ?? '';
@@ -55,9 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "<p><strong>Horário Disponível:</strong> $hora_disponivel</p>";
         echo "<p><strong>Comentários:</strong> $comentarios</p>";
         echo "</div>";
-    } else {
-        echo "<p>O formulário não foi respondido pelo usuário.</p>";
-    }
+
 ?>
     </form>
 
