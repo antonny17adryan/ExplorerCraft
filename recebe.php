@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envios</title>
-    <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="Cadastro.css">
     <script>
         function togglePassword() {
@@ -24,7 +23,7 @@
 
 <body>
     <header>
-        <h1>Formulário de Cadastro</h1>
+        <h1>Envios</h1>
         <nav>
         <a href="index.html" aria-label="Página inicial">Home</a>
             <a href="Cadastro.html">Cadastro</a>
