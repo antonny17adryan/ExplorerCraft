@@ -1,0 +1,155 @@
+    /* Revisado por IA e por Antonny */
+@font-face {
+  font-family: 'Monocraft';
+  src: url('Monocraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Monocraft', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5A422A;
+}
+header {
+  background-color: #417a43;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem;
+}
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+header nav a:hover {
+  color: #00FF00;
+}
+a:hover {
+  color: #00FF00;
+}
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+}
+nav {
+  background-color: #417a43;
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 30%;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Animações para o hover */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.card h2 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #417a43;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Monocraft', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #b36b00;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  background-color: #f0f0f0; 
+}
+
+.card img:hover {
+  transform: scale(1.1); 
+}
+
+footer {
+  background-color: #417a43;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+* {
+  cursor: url('espada.png'), auto !important;
+}
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.header-title h1 {
+  font-size: 2.5rem; 
+  color: #fff;
+  margin: 0;
+  font-family: 'Monocraft', sans-serif;
+}
+
+.header-title .gif {
+  height: 8em; 
+  width: auto; 
+}

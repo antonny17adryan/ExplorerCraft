@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Monocraft';
+    src: url('Monocraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Monocraft', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5A422A;
+    color: #ffffff;
+}
+
+a {
+    color: #FF5733;
+}
+
+a:hover {
+    color: #00FF00;
+}
+
+* {
+    cursor: url('espada.png'), auto !important;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+header {
+    background-color: #417a43;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    color: #00FF00;
+}
+
+form {
+    margin: 30px auto;
+    padding: 30px;
+    background: #2c2014;
+    border-radius: 10px;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+form legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+form input, form textarea, form select, form button {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 2px solid #2c2014;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #000;
+    background-color: #fff;
+    font-family: 'Monocraft', sans-serif;
+    box-sizing: border-box;
+}
+
+form select {
+    background-color: #f9f9f9;
+}
+
+form input[type="date"], form input[type="color"], form input[type="file"], form input[type="url"], form input[type="tel"], form textarea {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    font-family: 'Monocraft', sans-serif;
+}
+
+form button {
+    background-color: #72AE4A;
+    color: #000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+form button:focus {
+    border-color: #417a43;
+    outline: none;
+    box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #417a43;
+    outline: none;
+    box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
+}
+
+.result-container {
+    background-color: #2c2014;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.result-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.result-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#feedback {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: green;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#feedback.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+footer {
+    background-color: #417a43;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+button[type="submit"], button[type="reset"] {
+    font-family: 'Monocraft', sans-serif;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(7, 87, 173, 0.5);
+}
+
+input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+label, input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+div.contato-opcoes {
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: darkgreen;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(114, 174, 74, 0.7);
+}
+
+button#show-password {
+    background-color: #ff6f00; 
+    color: #ffffff;
+    font-family: 'Monocraft', sans-serif; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+button#show-password:hover {
+    background-color: #ff6f00d0; 
+    transform: scale(1.05);
+}
+
+button#show-password:focus {
+    outline: none; 
+    box-shadow: 0 0 5px #ff6f00d0; 
+}
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.header-title h1 {
+    font-size: 2.5rem; 
+    color: #fff;
+    margin: 0;
+    font-family: 'Monocraft', sans-serif;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.header-title h1 {
+    font-size: 2.5rem; 
+    color: #fff;
+    margin: 0;
+    font-family: 'Monocraft', sans-serif;
+}
+
+.header-title .gif {
+    height: 8em; 
+    width: auto; 
+}
